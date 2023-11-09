@@ -1,0 +1,44 @@
+@import "../../node_modules/bootstrap/scss/bootstrap-grid";
+
+$grid-columns: 12;
+$grid-gutter-width: 24px;
+
+$grid-breakpoints: ( 
+    xs: 0,
+// Small screen / phone
+    sm: 376px + 24px,
+// Medium screen / tablet
+    md: 830px + 24px,
+// Large screen / desktop
+    lg: 1050px + 24px,
+// Extra large screen / wide desktop
+    xl: 1280px + 24px, 
+    xxl: 1550px + 24px );
+
+$container-max-widths: ( 
+    sm: 500px + 24px, //-
+    md: 750px + 24px, 
+    lg: 980px + 24px, //-
+    xl: 1200px + 24px, 
+    xxl: 1464px + 24px //-
+);
+
+
+body {
+    background-color: #000;
+    span {
+        color: red;
+    }
+}
+
+@media (max-width: 768px) {
+    span {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    span {
+        background-color: green;
+    }
+}
