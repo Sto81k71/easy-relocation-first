@@ -1,3 +1,386 @@
+/*
+
+	HTML5 Reset :: style.css
+
+	----------------------------------------------------------
+
+	We have learned much from/been inspired by/taken code where offered from:
+
+
+
+	Eric Meyer					:: https://meyerweb.com
+
+	HTML5 Doctor				:: https://html5doctor.com
+
+	and the HTML5 Boilerplate	:: https://html5boilerplate.com
+
+
+
+-------------------------------------------------------------------------------*/
+
+/* Let's default this puppy out
+
+-------------------------------------------------------------------------------*/
+
+html,
+body,
+body div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+figure,
+footer,
+header,
+menu,
+nav,
+section,
+time,
+mark,
+audio,
+video,
+details,
+summary {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-weight: normal;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+article,
+aside,
+figure,
+footer,
+header,
+nav,
+section,
+details,
+summary {
+  display: block;
+}
+
+/* Handle box-sizing while better addressing child elements:
+
+   https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+/* consider resetting the default cursor: https://gist.github.com/murtaugh/5247154 */
+
+/* Responsive images and other embedded objects
+
+*/
+
+img,
+object,
+embed {
+  max-width: 100%;
+}
+
+/*
+
+   Note: keeping IMG here will cause problems if you're using foreground images as sprites.
+
+	 In fact, it *will* cause problems with Google Maps' controls at small size.
+
+	If this is the case for you, try uncommenting the following:
+
+
+
+#map img {
+
+		max-width: none;
+
+}
+
+*/
+
+/* force a vertical scrollbar to prevent a jumpy page */
+
+html {
+  overflow-y: scroll;
+}
+
+/* we use a lot of ULs that aren't bulleted.
+
+	don't forget to restore the bullets within content. */
+
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted #000;
+  cursor: help;
+}
+
+/* tables still need cellspacing="0" in the markup */
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+th {
+  font-weight: bold;
+  vertical-align: bottom;
+}
+
+td {
+  font-weight: normal;
+  vertical-align: top;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input,
+select {
+  vertical-align: middle;
+}
+
+pre {
+  white-space: pre;
+  /* CSS2 */
+  white-space: pre-wrap;
+  /* CSS 2.1 */
+  white-space: pre-line;
+  /* CSS 3 (and 2.1 as well, actually) */
+  word-wrap: break-word;
+  /* IE */
+}
+
+input[type=radio] {
+  vertical-align: text-bottom;
+}
+
+input[type=checkbox] {
+  vertical-align: bottom;
+}
+
+.ie7 input[type=checkbox] {
+  vertical-align: baseline;
+}
+
+.ie6 input {
+  vertical-align: text-bottom;
+}
+
+select,
+input,
+textarea {
+  font: 99% sans-serif;
+}
+
+table {
+  font-size: inherit;
+  font: 100%;
+}
+
+small {
+  font-size: 85%;
+}
+
+strong {
+  font-weight: bold;
+}
+
+td,
+td img {
+  vertical-align: top;
+}
+
+/* Make sure sup and sub don't mess with your line-heights https://gist.github.com/413930 */
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+/* standardize any monospaced elements */
+
+pre,
+code,
+kbd,
+samp {
+  font-family: monospace, sans-serif;
+}
+
+/* hand cursor on clickable elements */
+
+.clickable,
+label,
+input[type=button],
+input[type=submit],
+input[type=file],
+button {
+  cursor: pointer;
+}
+
+/* Webkit browsers add a 2px margin outside the chrome of form elements */
+
+button,
+input,
+select,
+textarea {
+  margin: 0;
+}
+
+/* make buttons play nice in IE */
+
+button,
+input[type=button] {
+  width: auto;
+  overflow: visible;
+}
+
+/* scale images in IE7 more attractively */
+
+.ie7 img {
+  -ms-interpolation-mode: bicubic;
+}
+
+/* prevent BG image flicker upon hover
+
+   (commented out as usage is rare, and the filter syntax messes with some pre-processors)
+
+.ie6 html {filter: expression(document.execCommand("BackgroundImageCache", false, true));}
+
+*/
+
+/* let's clear some floats */
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  zoom: 1;
+}
+
+ul,
+li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  line-height: initial;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 /*!
  * Bootstrap Grid v5.3.2 (https://getbootstrap.com/)
  * Copyright 2011-2023 The Bootstrap Authors
@@ -991,12 +1374,261 @@
   padding-left: 3rem !important;
 }
 
-body {
-  background-color: #000;
+@font-face {
+  font-family: "Gilroy";
+  src: url("../files/font/Gilroy-Bold.eot");
+  src: url("../files/font/Gilroy-Bold.eot?#iefix") format("embedded-opentype"), url("../files/font/Gilroy-Bold.woff2") format("woff2"), url("../files/font/Gilroy-Bold.woff") format("woff"), url("../files/font/Gilroy-Bold.ttf") format("truetype"), url("../files/font/Gilroy-Bold.svg#Gilroy-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
 }
 
-body span {
-  color: red;
+@font-face {
+  font-family: "Gilroy";
+  src: url("../files/font/Gilroy-SemiBold.eot");
+  src: url("../files/font/Gilroy-SemiBold.eot?#iefix") format("embedded-opentype"), url("../files/font/Gilroy-SemiBold.woff2") format("woff2"), url("../files/font/Gilroy-SemiBold.woff") format("woff"), url("../files/font/Gilroy-SemiBold.ttf") format("truetype"), url("../files/font/Gilroy-SemiBold.svg#Gilroy-SemiBold") format("svg");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../files/font/Gilroy-Regular.eot");
+  src: url("../files/font/Gilroy-Regular.eot?#iefix") format("embedded-opentype"), url("../files/font/Gilroy-Regular.woff2") format("woff2"), url("../files/font/Gilroy-Regular.woff") format("woff"), url("../files/font/Gilroy-Regular.ttf") format("truetype"), url("../files/font/Gilroy-Regular.svg#Gilroy-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+.stg-section_margin + .stg-section_margin {
+  margin-top: 65px;
+}
+
+.stg-btn {
+  border-radius: 5px;
+  background: #E54E43;
+  border: 2px solid #E54E43;
+  outline: 0px;
+  color: #FFF;
+  text-align: center;
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.stg-btn_small {
+  font-size: 16px;
+  padding: 10px 25px;
+}
+
+.stg-btn_middle {
+  font-size: 16px;
+  padding: 10px 32px;
+}
+
+.stg-btn_big {
+  font-size: 18px;
+  padding: 14px 34px;
+}
+
+.stg-btn:active,
+.stg-btn:hover {
+  background-color: #FFF;
+  color: #E54E43;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.stg-h1 {
+  color: #E54E43;
+  font-family: "Gilroy";
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.stg-h2 {
+  color: #000;
+  text-align: center;
+  font-family: "Gilroy";
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.stg-h3 {
+  color: #000;
+  font-family: "Gilroy";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.stg-h4 {
+  color: #000;
+  font-family: "Gilroy";
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.stg-text-accent {
+  color: #E54E43;
+  font-family: "Gilroy";
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.stg-text-strong {
+  color: #000;
+  font-family: "Gilroy";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Gilroy";
+  color: #000;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.logo {
+  width: 178px;
+  height: auto;
+}
+
+.header {
+  padding: 20px 0px;
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.25);
+  z-index: 2;
+  position: relative;
+}
+
+.header__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header__language-cntr {
+  display: inline-block;
+}
+
+.header__nav {
+  display: inline-block;
+}
+
+.header__menu {
+  display: inline-block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+}
+
+.header__menu-item {
+  display: inline-block;
+}
+
+.header__menu-link {
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.header__menu-link:active,
+.header__menu-link:hover {
+  border-radius: 5px;
+  background: #EEE;
+  color: #E54E43;
+  padding: 12px 16px;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.no-webp .section__main-menu {
+  background-image: url("../img/main-info.png"); }
+
+.section__main-menu {
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+}
+
+.main-info {
+  background: rgb(255, 255, 255);
+  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), color-stop(50%, rgb(255, 255, 255)));
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgb(255, 255, 255) 50%);
+  z-index: 1;
+  position: relative;
+  padding-top: 78px;
+  height: 585px;
+}
+
+.main-info__advantage-text {
+  font-size: 14px;
+}
+
+.main-info__title {
+  margin-bottom: 22px;
+}
+
+.main-info__text {
+  margin-bottom: 30px;
+}
+
+.main-info__advantage-info {
+  margin-left: 14px;
+  display: inline-block;
+}
+
+.main-info__advantages {
+  border-top: 1px solid #DFDFDF;
+  border-bottom: 1px solid #DFDFDF;
+  padding: 13px 17px;
+  margin-bottom: 43px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main-info__advantage {
+  display: inline-block;
+}
+
+.main-info__btn {
+  float: right;
 }
 
 @media (min-width: 576px) {
@@ -5749,16 +6381,6 @@ body span {
   }
 }
 
-@media (max-width: 768px) {
-  span {
-    font-size: 20px;
-  }
-
-  span {
-    background-color: green;
-  }
-}
-
 @media print {
   .d-print-inline {
     display: inline !important;
@@ -5810,3 +6432,5 @@ body span {
     display: none !important;
   }
 }
+
+.webp .section__main-menu { background-image: url(../img/main-info.webp); }
