@@ -73,6 +73,10 @@ $container-max-widths: (
             margin-top: 65px;
         }
     }
+
+    &_connection-form {
+        margin-top: 159px;
+    }
 }
 
 .stg-btn {
@@ -170,6 +174,10 @@ $container-max-widths: (
 a {
     cursor: pointer;
     text-decoration: none;
+}
+
+.stg-shadow {
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.25);
 }
 //*==================  GLOBAL ==================*//
 
@@ -419,4 +427,50 @@ body {
     &__person-text {
 
     }
+}
+
+.footer {
+    padding: 26px 0px 17px 0px;
+
+    &__partner {
+        display: flex;
+        gap: 15px;
+    }
+
+    &__partner-img {
+        width: 65px;
+        height: auto;
+    }
+
+    &__partner-text {
+        font-size: 14px;
+        max-width: 210px;
+        line-height: 16px;
+    }
+
+    &__menu-title {
+
+    }
+
+    &__menu-list {
+
+    }
+
+    &__menu-item {
+        display: inline-block;
+        width: 160px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        margin-right: 30px;
+    }
+
+    &__menu-link {
+
+    }
+}
+
+.copyright {
+    padding: 14px 21px;
+    text-align: center;
 }
