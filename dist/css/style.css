@@ -1467,19 +1467,19 @@ a {
 .stg-h3 {
   color: #000;
   font-family: "Gilroy";
-  font-size: 16px;
+  font-size: 22px;
   font-style: normal;
   font-weight: 600;
-  line-height: 24px;
+  line-height: normal;
 }
 
 .stg-h4 {
   color: #000;
   font-family: "Gilroy";
-  font-size: 22px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 600;
-  line-height: normal;
+  line-height: 24px;
 }
 
 .stg-text-accent {
@@ -1581,15 +1581,17 @@ body {
   background-position: 0 0;
   background-repeat: no-repeat;
   background-size: auto 100%;
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.25);
 }
 
 .main-info {
-  background: rgb(255, 255, 255);
-  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), color-stop(50%, rgb(255, 255, 255)));
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgb(255, 255, 255) 50%);
+  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), color-stop(30%, rgb(255, 255, 255)), to(rgb(255, 255, 255)));
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgb(255, 255, 255) 30%, rgb(255, 255, 255) 100%);
   z-index: 1;
   position: relative;
   padding-top: 78px;
+  padding-left: 190px;
   height: 585px;
 }
 
@@ -1629,6 +1631,120 @@ body {
 
 .main-info__btn {
   float: right;
+}
+
+.sketch-country {
+  padding: 26px 0px;
+  border-bottom: 1px #DFDFDF solid;
+}
+
+.sketch-country__price {
+  margin-top: 9px;
+}
+
+.sketch-country__advantages-list {
+  list-style-type: disc;
+}
+
+.sketch-country__advantages-item {
+  list-style-type: disc;
+}
+
+.offers-list__title {
+  margin-bottom: 39px;
+}
+
+.offers-list .row + .row {
+  margin-top: 26px;
+}
+
+.offer {
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.25);
+  padding: 15px 22px 13px 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.offer__img {
+  height: 102px;
+  width: auto;
+}
+
+.offer__text {
+  display: inline-block;
+  max-width: 185px;
+}
+
+.text-block__paragraph + .text-block__paragraph {
+  margin-top: 15px;
+}
+
+.text-block__title {
+  margin-bottom: 23px;
+}
+
+.connection-form {
+  padding: 43px 0px 0px 65px;
+  border-radius: 5px;
+  background: #F3F3F3;
+}
+
+.connection-form__title {
+  color: #E54E43;
+  font-family: Gilroy;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-top: 50px;
+  margin-bottom: 12px;
+}
+
+.connection-form__img {
+  position: absolute;
+  height: 472px;
+  width: auto;
+  bottom: 0px;
+  right: 0px;
+}
+
+.connection-form__img-block {
+  position: relative;
+}
+
+.connection-form__text {
+  margin-bottom: 15px;
+}
+
+.connection-form__contacts-list {
+  margin-top: 28px;
+  margin-bottom: 16px;
+}
+
+.connection-form__contact-item {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.connection-form__contact-item + .connection-form__contact-item {
+  margin-left: 12px;
+}
+
+.connection-form__contact-icon {
+  margin-right: 6px;
 }
 
 @media (min-width: 576px) {

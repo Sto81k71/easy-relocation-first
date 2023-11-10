@@ -134,19 +134,19 @@ $container-max-widths: (
 .stg-h3 {
     color: #000;
     font-family: "Gilroy";
-    font-size: 16px;
+    font-size: 22px;
     font-style: normal;
     font-weight: 600;
-    line-height: 24px; 
+    line-height: normal;
 }
 
 .stg-h4 {
     color: #000;
     font-family: "Gilroy";
-    font-size: 22px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 600;
-    line-height: normal;
+    line-height: 24px; 
 }
 
 .stg-text-accent {
@@ -236,15 +236,16 @@ body {
         background-position: 0 0;
         background-repeat: no-repeat;
         background-size: auto 100%;
+        box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.25);
     }
 }
 
 .main-info {
-    background: rgb(255,255,255);
-    background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 50%);
+    background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 30%, rgba(255,255,255,1) 100%);
     z-index: 1;
     position: relative;
     padding-top: 78px;
+    padding-left: 190px;
 
     height: 585px;
     &__advantage-text {
@@ -279,5 +280,143 @@ body {
 
     &__btn {
         float: right;
+    }
+}
+
+.sketch-country {
+    padding: 26px 0px;
+    border-bottom: 1px #DFDFDF solid;
+
+    &__img-flug {
+
+    }
+
+    &__info {
+
+    }
+
+    &__price {
+        margin-top: 9px;
+    }
+
+    &__advantages {
+
+    }
+
+    &__advantages-list {
+        list-style-type: disc;
+    }
+
+    &__advantages-item {
+        list-style-type: disc;
+    }
+}
+
+.offers-list {
+    &__title {
+        margin-bottom: 39px;
+    }
+
+    .row + .row {
+        margin-top: 26px;
+    }
+}
+
+.offer {
+    border-radius: 5px;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.25);
+    padding: 15px 22px 13px 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__img {
+        height: 102px;
+        width: auto;
+    }
+
+    &__text {
+        display: inline-block;
+        max-width: 185px;
+    }
+}
+
+.text-block {
+    &__block {
+
+    }
+
+    &__paragraph {
+
+        & + & {
+            margin-top: 15px;
+        }
+    }
+
+    &__title {
+        margin-bottom: 23px;
+    }
+
+    &__paragraph-title {
+
+    }
+}
+
+.connection-form {
+    padding: 43px 0px 0px 65px;
+    border-radius: 5px;
+    background: #F3F3F3;
+
+    &__title {
+        color: #E54E43;
+        font-family: Gilroy;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        margin-top: 50px;
+        margin-bottom: 12px;
+    }
+
+    &__img {
+        position: absolute;
+        height: 472px;
+        width: auto;
+        bottom: 0px;
+        right: 0px;
+    }
+
+    &__img-block {
+        position: relative;
+    }
+
+    &__text {
+        margin-bottom: 15px;
+    }
+
+    &__contacts-list {
+        margin-top: 28px;
+        margin-bottom: 16px;
+    }
+
+    &__contact-item {
+        display: inline-flex;
+        align-items: center;
+
+        & + & {
+            margin-left: 12px;
+        }
+    }
+
+    &__contact-icon {
+        margin-right: 6px;
+    }
+
+    &__person-title {
+
+    }
+
+    &__person-text {
+
     }
 }

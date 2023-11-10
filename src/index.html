@@ -14,7 +14,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col"></div>
-                        <div class="col-7">
+                        <div class="col-9">
                             @@include('html/main-info.html',{})
                         </div>
                     </div>
@@ -22,31 +22,19 @@
             </section>
             <section class="stg-section stg-section_margin">
                 <div class="container">
-                    <div class="row">
-                        <div class="col">
-                            @@include('html/sketch-country.html',{})
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            @@include('html/sketch-country.html',{})
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            @@include('html/sketch-country.html',{})
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            @@include('html/sketch-country.html',{})
-                        </div>
-                    </div>
+                    @@include('html/sketch-country.html',{})
+                    @@include('html/sketch-country.html',{})
+                    @@include('html/sketch-country.html',{})
                 </div>
             </section>
             <section class="stg-section stg-section_margin">
                 <div class="container">
                     @@include('html/offers-list.html',{})
+                </div>
+            </section>
+            <section class="stg-section stg-section_margin">
+                <div class="container">
+                    @@include('html/text-block.html',{})
                 </div>
             </section>
             <section class="stg-section stg-section_margin">
@@ -64,18 +52,13 @@
                     @@include('html/faq.html',{})
                 </div>
             </section>
-            <section class="stg-section stg-section_margin">
-                <div class="container">
-                    @@include('html/footer.html',{})
-                </div>
-            </section>
-            <section class="stg-section">
-                <div class="container">
-                    @@include('html/copuright.html',{})
-                </div>
-            </section>
         </main>
-        @@include('html/footer.html',{})
+        <section class="stg-section stg-section_margin">
+            <div class="container">
+                @@include('html/footer.html',{})
+            </div>
+        </section>
+        @@include('html/copuright.html',{})
         <script src="js/app.min.js"></script>
     </body>
 </html>
