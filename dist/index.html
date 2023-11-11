@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>easyRelocation</title>
-        <link rel="stylesheet" href="css/style.css?_v=20231110211255">
+        <link rel="stylesheet" href="css/style.css?_v=20231111135853">
     </head>
     <body>
         <header class="header">
@@ -194,14 +194,16 @@
         <div class="modal__content">
             <form action="#">
                 <div class="modal__close" data-close>&times;</div>
-                <div class="modal__title">Мы свяжемся с вами как можно быстрее!</div>
-                <input required placeholder="Ваше имя" name="name" type="text" class="modal__input w-100">
-                <input required placeholder="Ваш номер телефона" name="phone" type="phone" class="modal__input w-100">
-                <button class="stg-btn stg-btn_big mx-auto d-block w-100">Перезвонить мне</button>
+                <input required placeholder="Ваше имя" name="name" type="text" class="modal__input">
+                <input required placeholder="Ваша фамилия" name="surname" type="text" class="modal__input">
+                <input required placeholder="Ваш номер телефона" name="phone" type="phone" class="modal__input">
+                <input required placeholder="Ваше E-mail" name="email" type="email" class="modal__input">
+                <input required placeholder="Ваедите промокод" name="promo" type="text" class="modal__input">
+                <button class="stg-btn stg-btn_big modal__btn">Оформить</button>
             </form>
         </div>
     </div>
 </div>
-        <script src="js/app.min.js?_v=20231110211255"></script>
+        <script src="js/app.min.js?_v=20231111135853"></script>
     </body>
 </html>

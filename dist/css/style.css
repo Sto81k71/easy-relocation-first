@@ -1737,7 +1737,8 @@ body {
 }
 
 .modal__dialog {
-  max-width: 500px;
+  max-width: 700px;
+  min-width: 500px;
 }
 
 .modal__content {
@@ -1747,7 +1748,7 @@ body {
   background-color: #fff;
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 5px;
-  max-height: 80vh;
+  max-height: 100vh;
   overflow-y: auto;
 }
 
@@ -1764,28 +1765,26 @@ body {
   cursor: pointer;
 }
 
-.modal__title {
-  text-align: center;
-  font-size: 22px;
-  text-transform: uppercase;
-}
-
 .modal__input {
+  font-family: "Gilroy";
+  color: #000;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
   display: block;
   margin: 20px auto 20px auto;
   background: #fff;
-  -webkit-box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-          box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
   border: none;
-  text-align: center;
-  padding: 20px;
+  border-bottom: 1px solid;
+  padding: 20px 0px;
   outline: 0;
   width: 100%;
 }
 
-.modal .btn {
+.modal__btn {
   display: block;
-  margin: 0 auto;
+  width: 100%;
 }
 
 .show {
@@ -6578,6 +6577,12 @@ body {
 
   .ps-xxl-5 {
     padding-left: 3rem !important;
+  }
+}
+
+@media (max-width: 859.98px) {
+  .modal__dialog {
+    min-width: 320px;
   }
 }
 

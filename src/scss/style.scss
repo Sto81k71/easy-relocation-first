@@ -381,57 +381,62 @@ body {
     height: 100%;
     overflow: hidden;
     background-color: rgba(0,0,0,.5);
-}
 
-.modal__dialog {
-    max-width: 500px;
-}
+    &__dialog {
+        max-width: 700px;
+        min-width: 500px;
+    }
 
-.modal__content {
-    position: relative;
-    width: 100%;
-    padding: 40px;
-    background-color: #fff;
-    border: 1px solid rgba(0,0,0,.2);
-    border-radius: 5px;
-    max-height: 80vh;
-    overflow-y: auto;
-}
+    &__content {
+        position: relative;
+        width: 100%;
+        padding: 40px;
+        background-color: #fff;
+        border: 1px solid rgba(0,0,0,.2);
+        border-radius: 5px;
+        max-height: 100vh;
+        overflow-y: auto;
+    }
 
-.modal__close {
-    position: absolute;
-    top: 8px;
-    right: 14px;
-    font-size: 30px;
-    color: #000;
-    opacity: .5;
-    font-weight: 500;
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
-}
+    &__close {
+        position: absolute;
+        top: 8px;
+        right: 14px;
+        font-size: 30px;
+        color: #000;
+        opacity: .5;
+        font-weight: 500;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+    }
 
-.modal__title {
-    text-align: center;
-    font-size: 22px;
-    text-transform: uppercase;
-}
+    &__input {
+        font-family: 'Gilroy';
+        color: #000;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px; 
+        display: block;
+        margin: 20px auto 20px auto;
+        background: #fff;
+        border: none;
+        border-bottom: 1px solid;
+        padding: 20px 0px;
+        outline: 0;
+        width: 100%;
+    }
 
-.modal__input {
-    display: block;
-    margin: 20px auto 20px auto;
-    background:#fff;
-    box-shadow: 0 4px 15px rgba(0,0,0,.2);
-    border: none;
-    text-align: center;
-    padding: 20px;
-    outline: 0;
-    width: 100%;
-}
-
-.modal .btn {
-    display: block;
-    margin: 0 auto;
+    &__btn {
+        display: block;
+        width: 100%;
+    }
+    @include media-breakpoint-down (md) {
+        &__dialog {
+            min-width: 320px;
+        }
+    }
 }
 
 .show {
