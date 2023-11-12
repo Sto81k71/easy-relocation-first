@@ -14,16 +14,41 @@
                 <div class="container">
                     <div class="row">
                         <div class="col"></div>
-                        <div class="col-9">
+                        <div class="col-12 col-xl-9">
                             @@include('html/main-info.html',{})
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="stg-section">
+                <div class="container">
+                    <div class="d-flex d-sm-none d-sm-none main-info__advantages">
+                        <div class="main-info__advantage">
+                            <img class="main-info__advantage-img" src="@img/wallet.svg" alt="wallet">
+                            <div class="main-info__advantage-info">
+                                <span class="stg-text-accent">от 150 000 €</span>
+                                <p class="main-info__advantage-text">Сумма инвестиций</p>
+                            </div>
+                        </div>
+                        <div class="main-info__advantage">
+                            <img class="main-info__advantage-img" src="@img/calendar.svg" alt="wallet">
+                            <div class="main-info__advantage-info">
+                                <span class="stg-text-accent">от 2 месяцев</span>
+                                <p class="main-info__advantage-text">Срок получения ВНЖ</p>
+                            </div>
+                        </div>
+                        <div class="main-info__advantage">
+                            <img class="main-info__advantage-img" src="@img/money-term.svg" alt="wallet">
+                            <div class="main-info__advantage-info">
+                                <span class="stg-text-accent">от 5 лет</span>
+                                <p class="main-info__advantage-text">Срок возврата инвестиций</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </section>
             <section class="stg-section stg-section_margin">
                 <div class="container">
-                    @@include('html/sketch-country.html',{})
-                    @@include('html/sketch-country.html',{})
                     @@include('html/sketch-country.html',{})
                 </div>
             </section>
@@ -34,12 +59,38 @@
             </section>
             <section class="stg-section stg-section_margin">
                 <div class="container">
-                    @@include('html/text-block.html',{})
+                    <div class="text-block">
+                        <h2 class="stg-h2 text-block__title">Главные отличия ВНЖ для инвестора</h2>
+                        <div class="text-block__block">
+                            <div class="text-block__paragraph">
+                                <p class="text-block__paragraph-title stg-text-strong">Вид на жительство для членов семьи</p>
+                                <p class="text-block__text">Все программы позволяют включить в заявление супругу или супруга инвестора и несовершеннолетних детей пары. Португалия, Мальта, Греция и Испания разрешают участие взрослых детей и родителей.</p>
+                            </div>
+                            <div class="text-block__paragraph">
+                                <p class="text-block__paragraph-title stg-text-strong">Срок получения ВНЖ</p>
+                                <p class="text-block__text">Обычно составляет от 6 месяцев. В ОАЭ, Испании и на Кипре можно получить карту быстрее, за 2–3 месяца.</p>
+                            </div>
+                            <div class="text-block__paragraph">
+                                <p class="text-block__paragraph-title stg-text-strong">Вид на жительство в Европе для финансово независимых лиц</p>
+                                <p class="text-block__text">Предоставляют Австрия и Швейцария. Этот тип ВНЖ не требует инвестиций, но предполагает более жесткие условия: например, в стране нужно жить большую часть года, чтобы поддерживать статус резидента.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
             <section class="stg-section stg-section_margin">
                 <div class="container">
-                    @@include('html/text-block.html',{})
+                    <div class="text-block">
+                        <h2 class="stg-h2 text-block__title">Где получить вид на жительствоза инвестиции?</h2>
+                        <div class="text-block__block">
+                            <div class="text-block__paragraph">
+                                <p class="text-block__text">Чтобы выбрать подходящую страну, нужно определиться с целями и ограничениями. Например, если инвестор хочет жить в Испании, подойдет только испанский ВНЖ. Если цель — получить гражданство в Евросоюзе с минимальными затратами и без проживания в стране, оптимальный вариант — ВНЖ в Португалии за инвестиции.</p>
+                            </div>
+                            <div class="text-block__paragraph">
+                                <p class="text-block__text">Иммигрант Инвест — лицензированный агент инвестиционных программ стран Евросоюза, Карибского бассейна и Вануату. Мы поможем вам выбрать статус с учетом целей, задач, бюджета, состава семьи и других условий.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
             <section class="stg-section stg-section_connection-form">
@@ -47,13 +98,13 @@
                     @@include('html/connection-form.html',{})
                 </div>
             </section>
-            <section class="stg-section stg-section_margin">
+            <section class="stg-section stg-section_independent-margin">
                 <div class="container">
                     @@include('html/faq.html',{})
                 </div>
             </section>
         </main>
-        <section class="stg-section stg-section_margin stg-shadow">
+        <section class="stg-section stg-section_independent-margin stg-shadow">
             <div class="container">
                 @@include('html/footer.html',{})
             </div>

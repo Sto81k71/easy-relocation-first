@@ -1,13 +1,13 @@
 <footer class="footer">
-    <div class="row">
-        <div class="col-4 d-flex flex-column justify-content-between">
+    <div class="row flex-wrap">
+        <div class="col-md-4 d-flex flex-column justify-content-between order-2 order-md-0 col-12 text-center">
             @@include('logo.html',{})
             <div class="footer__partner">
                 <img class="footer__partner-img" alt="partner-logo" src="@img/partner-logo.png">
                 <span class="footer__partner-text">Иммигрант Инвест — официальный партнер IMC</span>
             </div>
         </div>
-        <div class="col-4">
+        <div class="col-6 col-md-4 order-0 order-md-1">
             <h4 class="stg-h4 footer__menu-title">Гражданство</h4>
             <ul class="footer__menu-list">
                 <li class="footer__menu-item"><a class="footer__menu-link">Мальта</a></li>
@@ -28,7 +28,7 @@
                 <li class="footer__menu-item"><a class="footer__menu-link">Португалия</a></li>
             </ul>
         </div>
-        <div class="col-4">
+        <div class="col-6 col-md-4 order-1 order-md-2">
             <h4 class="stg-h4 footer__menu-title">Вид на жительство</h4>
             <ul class="footer__menu-list">
                 <li class="footer__menu-item"><a class="footer__menu-link">Мальта, ПМЖ</a></li>
@@ -49,5 +49,9 @@
                 <li class="footer__menu-item"><a class="footer__menu-link">Блог</a></li>
             </ul>
         </div>
+    </div>
+    <div class="footer__partner-secondary d-flex d-md-none">
+        <img class="footer__partner-secondary-img" alt="partner-logo" src="@img/partner-logo.png">
+        <span class="footer__partner-secondary-text">Иммигрант Инвест — официальный партнер IMC</span>
     </div>
 </footer>
