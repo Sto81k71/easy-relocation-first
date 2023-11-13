@@ -165,20 +165,6 @@ a {
     box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.25);
 }
 
-.show {
-    display: flex !important;
-    justify-content: center;
-    align-items: center;
-}
-
-.hide {
-    display: none;
-}
-
-.fade {
-    animation-name: fade;
-    animation-duration: .5s;
-}
 //*==================  GLOBAL ==================*//
 
 body {
@@ -714,7 +700,8 @@ body {
     background-color: rgba(0,0,0,.5);
 
     &__dialog {
-        max-width: 500px;
+        max-width: 700px;
+        min-width: 500px;
     }
 
     &__content {
@@ -724,7 +711,7 @@ body {
         background-color: #fff;
         border: 1px solid rgba(0,0,0,.2);
         border-radius: 5px;
-        max-height: 80vh;
+        max-height: 100vh;
         overflow-y: auto;
     }
 
@@ -740,29 +727,60 @@ body {
         background-color: transparent;
         cursor: pointer;
     }
-
-    &__title {
-        text-align: center;
-        font-size: 22px;
-        text-transform: uppercase;
+    &__close {
+        position: absolute;
+        top: 8px;
+        right: 14px;
+        font-size: 30px;
+        color: #000;
+        opacity: .5;
+        font-weight: 500;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
     }
-    
+
     &__input {
+        font-family: 'Gilroy';
+        color: #000;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px; 
         display: block;
         margin: 20px auto 20px auto;
-        background:#fff;
-        box-shadow: 0 4px 15px rgba(0,0,0,.2);
+        background: #fff;
         border: none;
-        text-align: center;
-        padding: 20px;
+        border-bottom: 1px solid;
+        padding: 20px 0px;
         outline: 0;
         width: 100%;
     }
 
-    .btn {
+    &__btn {
         display: block;
-        margin: 0 auto;
+        width: 100%;
     }
+    @include media-breakpoint-down (md) {
+        &__dialog {
+            min-width: 320px;
+        }
+    }
+}
+
+.show {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hide {
+    display: none;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: .5s;
 }
 
 .language-ctrl {
@@ -1047,6 +1065,10 @@ body {
     }
 
     @include media-breakpoint-down (sm) {
+        .logo-link {
+            margin-right: 10px;
+        }
+
         .main-info {
             background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgb(255, 255, 255) 10%, rgb(255, 255, 255) 100%);
             height: 228px;
