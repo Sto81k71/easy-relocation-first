@@ -1600,7 +1600,7 @@ body {
 
 .header__nav {
   position: relative;
-  z-index: 10;
+  z-index: 12;
   display: inline-block;
 }
 
@@ -2077,6 +2077,38 @@ body {
   to {
     opacity: 1;
   }
+}
+
+.select {
+  width: 33px;
+  height: 20px;
+  position: absolute;
+  top: -7px;
+  left: 0;
+  /* z-index: -1; */
+}
+
+.select .ui-button,
+.select .ui-selectmenu-button.ui-button {
+  width: 100%;
+  background: none;
+  border: none;
+}
+
+.select .ui-selectmenu-menu {
+  width: 100%;
+}
+
+.select .ui-menu-item-wrapper {
+  font-size: 12px;
+}
+
+.select .ui-button .ui-icon {
+  display: none;
+}
+
+.select .ui-menu .ui-menu-item-wrapper {
+  padding: 5px 1em 5px 0.4em;
 }
 
 @media (min-width: 606px) {

@@ -304,3 +304,9 @@ $('.burger').click(function (e) {
     $('.burger, .header__nav').toggleClass('active');
     $('body').toggleClass('lock');
 })
+
+$('select').selectmenu({
+	change: function (event, ui) {
+		$(this).change();
+	}
+});
