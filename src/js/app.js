@@ -298,3 +298,9 @@ document.addEventListener('keydown', (e) => {
         closeModal();
     }
 });
+
+
+$('.burger').click(function (e) {
+    $('.burger, .header__nav').toggleClass('active');
+    $('body').toggleClass('lock');
+})

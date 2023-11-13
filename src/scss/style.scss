@@ -76,6 +76,8 @@
     transition: all 0.4s;
 
     &_small {
+        position: relative;
+        z-index: 10;
         font-size: 16px;
         padding: 10px 25px;
     }
@@ -189,6 +191,8 @@ body {
 }
 
 .logo {
+    position: relative;
+    z-index: 10;
     width: 178px;
     height: auto;
 }
@@ -196,8 +200,20 @@ body {
 .header {
     padding: 20px 0px;
     box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.25);
-    z-index: 2;
-    position: relative;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: #fff;
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #fff;
+        z-index: 0;
+    }
 
     &__burger-right {
         margin-right: 15px;
@@ -214,6 +230,8 @@ body {
     }
 
     &__nav {
+        position: relative;
+        z-index: 10;
         display: inline-block;
     }
 
@@ -238,6 +256,128 @@ body {
             transition: all 0.4s;
         }
     }
+
+    @include media-breakpoint-down (xl) {
+
+        &__nav {
+            position: fixed;
+            top: -100%;
+            left: 0;
+            width: 100%;
+            background-color: #fff;
+            z-index: -1;
+            transition: all .4s ease 0s;
+            padding: 100px 0px 24px 0px;
+            box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.25);
+            &.active {
+                top: 0;
+            }
+        }
+
+        &__menu {
+            justify-content: space-between;
+        }
+
+
+        & .burger {
+            display: block;
+            position: relative;
+            width: 30px;
+            height: 20px;
+            z-index: 10;
+            background: none;
+            &:after, &:before {
+                content: '';
+                background-color: #E54E43;
+                position: absolute;
+                width: 100%;
+                height: 3px;
+                left: 0;
+                z-index: 10;
+                transition: all .4s ease 0s;
+                border-radius: 3px;
+            }
+            span {
+                position: absolute;
+                background-color: #E54E43;
+                left: 0;
+                width: 100%;
+                height: 3px;
+                top: 9px;
+                z-index: 0;
+                transition: all .4s ease 0s;
+                border-radius: 3px;
+            }
+
+            &:before {
+                top: 0;
+            }
+            
+            &:after {
+                bottom: 0;
+            }
+        }
+
+        & .burger.active:before{
+            transform: rotate(45deg);
+            top: 8px;
+        }
+        & .burger.active:after{
+            transform: rotate(-45deg);
+            bottom: 9px;
+        }
+        & .burger.active span{
+            transform: scale(0);
+        }
+    }
+
+    @include media-breakpoint-down (md) {
+        &__menu {
+            display: block;
+            &-item {
+                display: block;
+                margin-left: -12px;
+                border-radius: 5px;
+                padding: 10px 12px;
+                &:hover {
+                    background: #EEE;
+                    .header____menu-link {
+                        color: #E54E43;
+                    }
+                }
+            }
+        }
+
+        &__menu-link {
+            font-size: 24px;
+            display: block;
+            width: 100%;
+            height: 100%;
+            &:hover {
+                background: none;
+                padding: 0;
+            }
+        }
+    }
+
+    @include media-breakpoint-down (sm) {
+        &__menu-link {
+            font-family: Gilroy;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 30px;
+            
+        }
+        &__menu {
+            &-item {
+                padding: 0px 12px;
+            }
+        }
+    }
+
+
+
 }
 
 .section {
@@ -626,6 +766,8 @@ body {
 }
 
 .language-ctrl {
+    position: relative;
+    z-index: 10;
     display: inline-flex;
     gap: 14px;
 
@@ -663,9 +805,15 @@ body {
     &__link {
 
     }
+
+    @include media-breakpoint-down (md) {
+        gap: 30px;
+    }
 }
 
 .burger {
+    position: relative;
+    z-index: 10;
     /*&__line {
         background-color: #E54E43;
         border: 2px;

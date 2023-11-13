@@ -7,27 +7,37 @@
                 </div>
                 @@include('logo.html',{})
             </div>
-            <nav class="header__nav d-xl-block d-none">
-                <ul class="header__menu">
-                    <li class="header__menu-item">
-                        <a href="#" class="header__menu-link">Гражданство</a>
-                    </li>
-                    <li class="header__menu-item">
-                        <a href="#" class="header__menu-link">ВНЖ</a>
-                    </li>
-                    <li class="header__menu-item">
-                        <a href="#" class="header__menu-link">Сравнение</a>
-                    </li>
-                    <li class="header__menu-item">
-                        <a href="#" class="header__menu-link">Недвижимость</a>
-                    </li>
-                    <li class="header__menu-item">
-                        <a href="#" class="header__menu-link">Истории клиентов</a>
-                    </li>
-                    <li class="header__menu-item">
-                        <a href="#" class="header__menu-link">О нас</a>
-                    </li>
-                </ul>
+            <!-- d-xl-block d-none -->
+            <nav class="header__nav">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 col-lg-10 col-xl-12">
+                            <ul class="header__menu">
+                                <li class="header__menu-item">
+                                    <a href="#" class="header__menu-link">Гражданство</a>
+                                </li>
+                                <li class="header__menu-item">
+                                    <a href="#" class="header__menu-link">ВНЖ</a>
+                                </li>
+                                <li class="header__menu-item">
+                                    <a href="#" class="header__menu-link">Сравнение</a>
+                                </li>
+                                <li class="header__menu-item">
+                                    <a href="#" class="header__menu-link">Недвижимость</a>
+                                </li>
+                                <li class="header__menu-item">
+                                    <a href="#" class="header__menu-link">Истории клиентов</a>
+                                </li>
+                                <li class="header__menu-item">
+                                    <a href="#" class="header__menu-link">О нас</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-12 col-lg-2 col-xl-2 d-flex d-xl-none justify-content-start justify-content-md-center justify-content-lg-end mt-3 mt-lg-0">
+                            @@include('language-ctrl.html',{})
+                        </div>
+                    </div>
+                </div>
             </nav>
             <div class="d-none d-xl-block">
                 @@include('language-ctrl.html',{})
