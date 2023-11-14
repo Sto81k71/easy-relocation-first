@@ -305,8 +305,8 @@ $('.burger').click(function (e) {
     $('body').toggleClass('lock');
 })
 
-$('select').selectmenu({
-	change: function (event, ui) {
-		$(this).change();
-	}
-});
+// $('select').selectmenu({
+// 	change: function (event, ui) {
+// 		$(this).change();
+// 	}
+// });

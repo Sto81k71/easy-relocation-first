@@ -1428,7 +1428,7 @@ a {
 
 .stg-btn_small {
   position: relative;
-  z-index: 10;
+  z-index: 8;
   font-size: 16px;
   padding: 10px 25px;
 }
@@ -2040,7 +2040,7 @@ body {
   width: 8px;
   height: 5px;
   top: 8px;
-  right: -12px;
+  right: 0px;
 }
 
 .language-ctrl__translation-icon {
@@ -2087,36 +2087,64 @@ body {
   }
 }
 
-.select {
-  width: 33px;
-  height: 20px;
-  position: absolute;
-  top: -7px;
-  left: 0;
-  /* z-index: -1; */
-}
-
-.select .ui-button,
-.select .ui-selectmenu-button.ui-button {
-  width: 100%;
+.dropbtn {
   background: none;
+  color: white;
+  width: 100%;
+  height: 100%;
   border: none;
 }
 
-.select .ui-selectmenu-menu {
-  width: 100%;
+.dropbtn:before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: url("../img/translation.svg") center center/cover no-repeat;
+  top: 0;
+  left: 0;
 }
 
-.select .ui-menu-item-wrapper {
-  font-size: 12px;
+.dropdown {
+  width: 32px;
+  height: 20px;
+  position: relative;
+  display: inline-block;
 }
 
-.select .ui-button .ui-icon {
+.dropdown-content {
   display: none;
+  position: absolute;
+  background-color: #fff;
+  border-radius: 0px 5px 5px 5px;
+  min-width: 160px;
+  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
 }
 
-.select .ui-menu .ui-menu-item-wrapper {
-  padding: 5px 1em 5px 0.4em;
+.dropdown-link {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+}
+
+.dropdown-link:hover {
+  background: #EEE;
+  color: #E54E43;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background: none;
 }
 
 @media (min-width: 606px) {
@@ -6065,6 +6093,11 @@ body {
   .stg-section_connection-form {
     margin-top: 77px;
   }
+
+  .dropdown-content {
+    right: 0;
+    border-radius: 5px 0px 5px 5px;
+  }
 }
 
 @media (max-width: 1021.98px) {
@@ -6136,6 +6169,11 @@ body {
 
   .sketch-country__advantages-list {
     margin-left: 20px;
+  }
+
+  .dropdown-content {
+    left: 0;
+    border-radius: 5px 0px 5px 5px;
   }
 }
 
