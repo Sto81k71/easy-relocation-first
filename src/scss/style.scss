@@ -46,6 +46,48 @@
 //*==================  FONT ==================*//
 
 //*==================  GLOBAL ==================*//
+
+.swiper-button-prev {
+    background-image: url("@img/arrow-l.svg") !important;
+    height: 17px !important;
+    width: 10px !important; 
+    display: inline-block !important;
+
+    &::after {
+        display: none;
+    }
+}
+
+.swiper-button-next {
+    background-image: url("@img/arrow-r.svg") !important;
+    height: 17px !important;
+    width: 10px !important;
+    display: inline-block !important;
+
+    &::after {
+        display: none;
+    }
+}
+
+textarea {
+    border-radius: 5px;
+    border: 1px solid #BEBEBE;
+    background: #FFF;
+    padding: 26px 0px 0px 20px;
+}
+
+input {
+    border-radius: 5px;
+    border: 1px solid #BEBEBE;
+    background: #FFF;
+    height: 54px;
+    padding-left: 20px;
+
+    &:active, &:hover, &:focus {
+        outline: none;
+    }
+}
+
 .stg-section {
     &_margin {
         & + & {
@@ -866,10 +908,554 @@ body {
     }
 }
 
+
+.dropbtn {
+    background: none;
+    color: white;
+    width: 100%;
+    height: 100%;
+    border: none;
+    &:before {
+        content: '';
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        background: url('@img/translation.svg') center center/cover no-repeat;
+        top: 0;
+        left: 0;
+    }
+}
+
+.dropdown {
+    width: 32px;
+    height: 20px;
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    border-radius: 0px 5px 5px 5px;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 10;
+    transition: 0.3s all;
+    @include media-breakpoint-down (xl) {
+        right: 0;
+        border-radius: 5px 0px 5px 5px;
+    }
+
+    @include media-breakpoint-down (lg) {
+        left: 0;
+        border-radius: 5px 0px 5px 5px;
+    }
+}
+
+.dropdown-link {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: .3s all;
+    &:hover {
+        background: #EEE;
+        color: #E54E43;
+    }
+}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background: none;}
+
+
+.about-us {
+    &__img {
+        width: 540px;
+        height: auto;
+    }
+
+    &__title {
+        margin-bottom: 15px;
+        color: #000 !important;
+    }
+
+    &__text {
+
+    }
+
+    &__list-item {
+        border-radius: 5px;
+        background: #FFF;
+        box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.25);
+        padding: 19px 17px 25px 20px;
+        transition: all 0.3s;
+
+        &:hover {
+            background: #EFEFEF;
+            transition: all 0.3s;
+        }
+    }
+
+    &__item-title {
+        margin-bottom: 19px;
+    }
+
+    &__item-text {
+
+    }
+
+    &__item-link {
+        margin-top: 19px;
+        color: #E54E43;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px; 
+    }
+}
+
+.personal-comment-one {
+    background: #F3F3F3;
+    padding-top: 53px;
+
+    &__img-container {
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+
+    &__text {
+        font-size: 22px;
+        line-height: 34px;
+        font-weight: 400;
+
+        & + & {
+            margin-top: 30px;
+        }
+    }
+
+    &__text_strong {
+        font-weight: 500 !important;
+    }
+
+    &__border {
+        background-color: #D4D4D4;
+        height: 1px;
+        width: 100%;
+        margin: 13px 0px;
+    }
+    
+    &__name {
+        font-weight: 500;
+    }
+
+    &__job-title {
+        margin-bottom: 59px;
+    }   
+
+    &__img {
+        width: 348px;
+        height: auto;
+        position: absolute;
+        bottom: 0;
+    }
+
+    &__person-info {
+
+    }
+}
+
+.personal-comment-two {
+    background: #F3F3F3;
+    padding-top: 53px;
+
+    &__text {
+        font-size: 22px;
+        line-height: 34px;
+        font-weight: 400;
+
+        & + & {
+            margin-top: 30px;
+        }
+    }
+
+    &__text_strong {
+        font-weight: 500 !important;
+    }
+
+    &__border {
+        background-color: #D4D4D4;
+        height: 1px;
+        width: 100%;
+        margin: 13px 0px;
+    }
+    
+    &__name {
+        font-weight: 500;
+    }
+
+    &__job-title {
+        margin-bottom: 59px;
+    }   
+
+    &__img {
+        width: 312px;
+        height: auto;
+        float: right;
+    }
+}
+
+.list-way-working {
+
+    .row:nth-child(2n + 1) {
+        .col > .list-way-working__item {
+            background: #F3F3F3;
+        }
+    }
+
+    &__item {
+        display: flex;
+        align-items: start;
+        padding: 40px 0px 40px 15px;
+    }
+
+    &__number {
+        color: #E54E43;
+        font-size: 36px;
+        font-weight: 600;
+        margin-right: 9px;
+    }
+
+    &__title {
+        width: 204px;
+        margin-right: 6px;
+    }
+
+    &__text {
+        max-width: 855px;
+    }
+}
+
+.big-list-advantages {
+    &__title {
+        margin-bottom: 67px;
+    }
+
+    &__item {
+
+    }
+
+    &__item-title {
+        margin-bottom: 9px;
+    }
+
+    &__text {
+
+    }
+
+    .swiper-slide {
+        width: 195px !important;
+        margin: 0px !important;
+    }
+
+    .swiper-wrapper {
+        //width: 500px !important;
+        //padding-left: 100px;
+    }
+
+    .swiper {
+        width: 608px;
+        padding: 0px 26px;
+    }
+}
+
+.list-team {
+    &__title {
+        margin-bottom: 26px;
+    }
+
+    &__text {
+        margin-bottom: 47px;
+    }
+
+    &__item {
+
+    }
+
+    &__person-img {
+        height: auto;
+        width: 100%;
+        margin-bottom: 16px;
+    }
+
+    &__person-name {
+        margin-bottom: 10px;
+        font-weight: 600;
+    }
+
+    &__person-job-title {
+
+    }
+
+    &__btn-container {
+        display: flex;
+        height: 100%;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__btn {
+
+    }
+}
+
+.carousel-reviews {
+    margin-bottom: 197px;
+    overflow: hidden !important;
+
+    &__title {
+        margin-bottom: 18px;
+    }
+
+    &__text {
+        margin-bottom: 28px;
+    }
+
+    &__item {
+        border-radius: 5px;
+        background: #FFF;
+        box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.25);
+        transition: all 0.3s;
+        padding: 10px;
+
+        &:hover {
+            background: #EFEFEF;
+            transition: all 0.3s;
+        }
+    }
+
+    &__person-info {
+
+    }
+    
+    &__text-massage {
+        margin-top: 20px;
+    }
+
+    &__item-header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__name {
+        font-family: 500;
+    }
+
+    &__subtitle {
+
+    }
+
+    &__img {
+        width: 45px;
+        height: auto;
+    }
+
+    &__swiper {
+        width: 90%;
+        overflow: visible !important;
+        padding-bottom: 20px !important;
+    }
+
+    .swiper-slide {
+        margin-right: 40px !important;
+    }
+
+    .swiper-button-prev {
+        left: -52px;
+    }
+
+    .swiper-button-next {
+        right: -52px;
+    }
+}
+
+.carousel-work-examples {
+    margin-bottom: 197px;
+    overflow: hidden;
+
+    &__title {
+        margin-bottom: 18px;
+    }
+
+    &__swiper {
+        padding-bottom: 20px !important;
+        overflow: visible !important;
+        width: 95%;
+        padding-left: 20px !important;
+    }   
+
+    &__text {
+        margin-bottom: 19px;
+    }
+
+    &__item {
+        border-radius: 5px;
+        background: #FFF;
+        box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.15);
+    }
+
+    &__img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 13px;
+    }
+
+    &__item-text {
+        margin: 0px 10px 16px 10px;
+        font-weight: 500;
+    }
+
+    &__link {
+        color: #E54E43;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px; 
+        margin: 0px 10px 10px 10px;
+    }
+
+    .swiper-button-prev {
+        left: -2px;
+    }
+
+    .swiper-button-next {
+        right: -20px;
+    }
+}
+
+.big-connection-form {
+    background: #F3F3F3;
+    padding: 42px 0px 52px 0px;
+
+    &__textarea {
+        resize: vertical;
+        min-width: 100%;
+        min-height: 169px;
+        max-height: 350px;
+        margin-bottom: 20px;
+    }
+
+    &__title {
+        margin: 38px;
+    }
+
+    &__input-container {
+        display: flex;
+        justify-content: space-between;
+
+        & + & {
+            margin-top: 20px;
+        }
+    }
+
+    &__input {
+        width: 48%;
+    }
+
+    &__btn {
+        float: right;
+        margin-top: 50px;
+    }
+
+    &__text {
+        margin-bottom: 67px;
+    }
+
+    &__personal-container {
+        display: flex;
+        gap: 25px;
+        align-items: center;
+    }
+
+    &__img {
+        height: 180px;
+        width: 180px;
+    }
+
+    &__name {
+        font-weight: 600;
+    }
+
+    &__job-title {
+
+    }
+
+    &__person-text {
+        max-width: 239px;
+    }
+}
+
 @include media-breakpoint-down (xl) {
     .main-info {
         padding-left: 25px;
         background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgb(255, 255, 255, 0.7) 10%, rgb(255, 255, 255) 30%, rgb(255, 255, 255) 100%);
+    }
+
+    .personal-comment-one {
+        &__job-title {
+            margin-bottom: 20px;
+        }
+
+        &__person-info {
+            margin: 126px 0px 30px 0px;
+        }
+
+        &__img-container {
+            display: flex;
+        }
+
+        &__img {
+            width: 236px;
+        }
+
+        &__person-info {
+            max-width: 173px;
+        }
+    }
+
+    .big-connection-form {
+        &__personal-container {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        &__text {
+            margin-bottom: 20px;
+        }
+    }
+
+    .carousel-reviews {
+        margin-bottom: 65px;
+
+        .swiper-button-prev {
+            left: -21px;
+        }
+
+        .swiper-button-next {
+            right: -40px;
+        }
+    }
+
+    .list-way-working {
+        &__item {
+            padding: 40px 10px 40px 15px;
+        }
+
+        &__title {
+            margin-right: 15px;
+        }
     }
 
     .stg-h3 {
@@ -1010,15 +1596,54 @@ body {
             margin-left: 20px;
         }
     }
+
+    .big-list-advantages {
+        .swiper {
+            width: 414px;
+        }
+    }
+
+    .personal-comment-two {
+        padding-bottom: 20px;
+
+        &__img-container {
+            display: flex;
+        }
+
+        &__person-info {
+            flex-direction: column;
+            justify-content: end;
+        }
+
+        &__job-title {
+            margin-bottom: 0px;
+        }
+    }
+
+    .carousel-reviews {
+        .swiper-slide {
+            margin-right: 30px !important; 
+        }
+
+        .swiper-button-next {
+            right: -20px;
+        }
+    }
 }
 
 @include media-breakpoint-down (md) {
-
     .section {
         &__main-menu {
             background-position: -238px 0;
         }
     }
+
+    .carousel-work-examples {
+        &__swiper {
+            width: 92%;
+        }
+    }
+
     .main-info {
         padding-top: 23px;
         height: 490px;
@@ -1061,177 +1686,181 @@ body {
         }
     }
 
-    @include media-breakpoint-down (sm) {
-        .logo-link {
-            margin-right: 10px;
-        }
-
-        .main-info {
-            background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgb(255, 255, 255) 10%, rgb(255, 255, 255) 100%);
-            height: 228px;
-            max-width: 300px;
-            padding-left: 70px;
-            float: right;
-
-            &__text {
-
-            }
-
-            &__btn {
-                float: none;
-            }
-
-            &__advantage {
-                width: 228px;
-            }
-
-            &__advantages {
-                justify-content: center;
-            }
-        }
-
-        .section {
-            &__main-menu {
-                background-size: auto 150%;
-                background-position: -170px 0;
-            }
-        }
-
-        .stg-h1 {
-            font-size: 26px;
-            font-weight: 600;
-        }
-
-        .stg-btn {
-            &_big {
-                font-size: 16px;
-                font-weight: 400;
-            }
-        }
-
-        .sketch-country {
-            &__info {
-                flex-direction: column;
-            }
-        }
-
-        .offer {
-            margin-top: 26px;
-            height: auto;
+    .big-connection-form {
+        &__personal-container {
             flex-direction: row;
-
-            &__text {
-                text-align: none;
-            }
         }
 
-        .offers-list .row + .row {
-            margin-top: 0px
+        &__person-text {
+            text-align: start;
         }
 
-        .connection-form {
-            padding: 13px 17px 0px 13px;
-        }
-
-        .footer {
-            &__menu-list {
-                column-count: 1;
-            }
+        &__text {
+            margin-top: 20px;
         }
     }
 }
 
-//================== select ==================//
-
-// .select {
-//     width: 33px;
-//     height: 20px;
-//     position: absolute;
-//     top: -7px;
-//     left: 0;
-//     /* z-index: -1; */
-//     .ui-button, .ui-selectmenu-button.ui-button{
-//         width: 100%;
-//         background: none;
-//         border: none;
-//     }
-//     .ui-selectmenu-menu {
-//         width: 100%;
-//     }
-//     .ui-menu-item-wrapper {
-//         font-size: 12px;
-//     }
-//     .ui-button .ui-icon {
-//         display: none;
-//     }
-//     .ui-menu .ui-menu-item-wrapper {
-//         padding: 5px 1em 5px .4em;
-//     }
-
-// }
-
-//================== select ==================//
-
-//================== dropdown =================//
-.dropbtn {
-    background: none;
-    color: white;
-    width: 100%;
-    height: 100%;
-    border: none;
-    &:before {
-        content: '';
-        position: absolute;
-        width: 20px;
-        height: 20px;
-        background: url('@img/translation.svg') center center/cover no-repeat;
-        top: 0;
-        left: 0;
-    }
-  }
-  
-  .dropdown {
-    width: 32px;
-    height: 20px;
-    position: relative;
-    display: inline-block;
-  }
-  
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #fff;
-    border-radius: 0px 5px 5px 5px;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 10;
-    transition: 0.3s all;
-    @include media-breakpoint-down (xl) {
-        right: 0;
-        border-radius: 5px 0px 5px 5px;
+@include media-breakpoint-down (sm) {
+    .logo-link {
+        margin-right: 10px;
     }
 
-    @include media-breakpoint-down (lg) {
-        left: 0;
-        border-radius: 5px 0px 5px 5px;
+    .personal-comment-one {
+        &__border {
+            display: none;
+        }
     }
 
-  }
-  
-  .dropdown-link {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    transition: .3s all;
-    &:hover {
-        background: #EEE;
-        color: #E54E43;
-    }
-  }
-  
-  .dropdown:hover .dropdown-content {display: block;}
-  
-  .dropdown:hover .dropbtn {background: none;}
+    .list-way-working {
+        &__item {
+            flex-wrap: wrap;
+        }
 
-//================== dropdown ====================//
+        &__text {
+            margin-top: 19px;
+        }
+    }
+
+    .big-list-advantages {
+        &__item {
+            text-align: center;
+        }
+
+        .swiper {
+            width: 218px;
+        }
+    }
+
+    .list-team {
+        &__item {
+            display: flex;
+        }
+
+        &__text-block {
+            padding-left: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+
+    .big-connection-form {
+        &__input-container {
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        &__input {
+            width: 100%;
+        }
+
+        &__btn {
+            margin: 50px auto 0px auto;
+            float: none;
+            display: block;
+        }
+
+        &__img {
+            height: auto;
+            width: auto;
+        }
+    }
+
+    .personal-comment-two {
+        &__border {
+            display: none;
+        }
+
+        &__img-container {
+            margin-top: 20px;
+        }
+    }
+
+    .personal-comment-one {
+        &__img {
+            width: inherit;
+            height: auto;
+            max-height: 100%;
+        }
+
+        &__img-block {
+            position: relative;
+            width: 100%;
+        }
+    }
+
+    .main-info {
+        background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgb(255, 255, 255) 10%, rgb(255, 255, 255) 100%);
+        height: 228px;
+        max-width: 300px;
+        padding-left: 70px;
+        float: right;
+
+        &__text {
+
+        }
+
+        &__btn {
+            float: none;
+        }
+
+        &__advantage {
+            width: 228px;
+        }
+
+        &__advantages {
+            justify-content: center;
+        }
+    }
+
+    .section {
+        &__main-menu {
+            background-size: auto 150%;
+            background-position: -170px 0;
+        }
+    }
+
+    .stg-h1 {
+        font-size: 26px;
+        font-weight: 600;
+    }
+
+    .stg-btn {
+        &_big {
+            font-size: 16px;
+            font-weight: 400;
+        }
+    }
+
+    .sketch-country {
+        &__info {
+            flex-direction: column;
+        }
+    }
+
+    .offer {
+        margin-top: 26px;
+        height: auto;
+        flex-direction: row;
+
+        &__text {
+            text-align: none;
+        }
+    }
+
+    .offers-list .row + .row {
+        margin-top: 0px
+    }
+
+    .connection-form {
+        padding: 13px 17px 0px 13px;
+    }
+
+    .footer {
+        &__menu-list {
+            column-count: 1;
+        }
+    }
+}
+

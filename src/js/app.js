@@ -310,3 +310,87 @@ $('.burger').click(function (e) {
 // 		$(this).change();
 // 	}
 // });
+
+
+var swiper = new Swiper(".big-list-advantages__swiper", {
+	spaceBetween: 30,
+	loop: false,
+	pagination: {
+	  el: ".swiper-pagination",
+	  clickable: true,
+	},
+	navigation: {
+	  nextEl: ".swiper-button-next",
+	  prevEl: ".swiper-button-prev",
+	},
+	breakpoints: {
+		1230: {
+			slidesPerView: 3
+		},
+		1022: {
+			slidesPerView: 3
+		},
+		798: {
+			slidesPerView: 2
+		},
+		0: {
+			slidesPerView: 1
+		},
+	}
+});
+
+var swiper = new Swiper(".carousel-reviews__swiper", {
+	slidesPerView: 3,
+	spaceBetween: 30,
+	loop: false,
+	pagination: {
+	  el: ".swiper-pagination",
+	  clickable: true,
+	},
+	navigation: {
+	  nextEl: ".swiper-button-next",
+	  prevEl: ".swiper-button-prev",
+	},
+	breakpoints: {
+		1230: {
+			slidesPerView: 3
+		},
+		1022: {
+			slidesPerView: 3
+		},
+		798: {
+			slidesPerView: 2
+		},
+		606: {
+			slidesPerView: 1
+		},
+		0: {
+			slidesPerView: 1
+		},
+	}
+});
+
+var swiper = new Swiper(".carousel-work-examples__swiper", {
+	slidesPerView: 3,
+	spaceBetween: 30,
+	loop: false,
+	pagination: {
+	  el: ".swiper-pagination",
+	  clickable: true,
+	},
+	navigation: {
+	  nextEl: ".swiper-button-next",
+	  prevEl: ".swiper-button-prev",
+	},
+	breakpoints: {
+		1230: {
+			slidesPerView: 3
+		},
+		606: {
+			slidesPerView: 2
+		},
+		0: {
+			slidesPerView: 1
+		},
+	}
+});

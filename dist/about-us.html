@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>easyRelocation</title>
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css?_v=20231121162048">
+        <link rel="stylesheet" href="css/style.css?_v=20231121162048">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css?_v=20231121162048"/>
+    </head>
+    <body>
+        <header class="header">
+    <div class="container">
+        <div class="header__container">
+            <div class="d-flex align-items-center">
+                <div class="d-inline-block d-sm-none d-xl-none header__burger-right">
+                    <div class="burger">
+    <span></span>
+</div>
+                </div>
+                <a href="#" class="logo-link"><img src="img/logo.svg" class="logo"></a>
+            </div>
+            <!-- d-xl-block d-none -->
+            <nav class="header__nav">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 col-lg-10 col-xl-12">
+                            <ul class="header__menu">
+                                <li class="header__menu-item">
+                                    <a href="#" class="header__menu-link">Гражданство</a>
+                                </li>
+                                <li class="header__menu-item">
+                                    <a href="#" class="header__menu-link">ВНЖ</a>
+                                </li>
+                                <li class="header__menu-item">
+                                    <a href="#" class="header__menu-link">Сравнение</a>
+                                </li>
+                                <li class="header__menu-item">
+                                    <a href="#" class="header__menu-link">Недвижимость</a>
+                                </li>
+                                <li class="header__menu-item">
+                                    <a href="#" class="header__menu-link">Истории клиентов</a>
+                                </li>
+                                <li class="header__menu-item">
+                                    <a href="about-us.html" class="header__menu-link">О нас</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-12 col-lg-2 col-xl-2 d-flex d-xl-none justify-content-start justify-content-md-center justify-content-lg-end mt-3 mt-lg-0">
+                            <div class="language-ctrl">
+    <a class="language-ctrl__link" href="#whatsapp">
+        <img src="img/whatsapp.svg" class="language-ctrl__whats-icon" alt="icon-whatsapp">
+    </a>
+    <a class="language-ctrl__link" href="#telegram">
+        <img src="img/telegram.svg" class="language-ctrl__telegram-icon" alt="icon-telegram">
+    </a>
+
+    <div class="language-ctrl__translation-block dropdown">
+        <button class="dropbtn"></button>
+        <div class="dropdown-content">
+            <a href="#" class="dropdown-link">ENG</a>
+            <a href="#" class="dropdown-link">RU</a>
+        </div>
+    </div>
+</div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <div class="d-none d-xl-block">
+                <div class="language-ctrl">
+    <a class="language-ctrl__link" href="#whatsapp">
+        <img src="img/whatsapp.svg" class="language-ctrl__whats-icon" alt="icon-whatsapp">
+    </a>
+    <a class="language-ctrl__link" href="#telegram">
+        <img src="img/telegram.svg" class="language-ctrl__telegram-icon" alt="icon-telegram">
+    </a>
+
+    <div class="language-ctrl__translation-block dropdown">
+        <button class="dropbtn"></button>
+        <div class="dropdown-content">
+            <a href="#" class="dropdown-link">ENG</a>
+            <a href="#" class="dropdown-link">RU</a>
+        </div>
+    </div>
+</div>
+            </div>
+            <div class="d-flex align-items-center">
+                <div class="d-none d-sm-inline-block d-xl-none header__burger-right">
+                    <div class="burger">
+    <span></span>
+</div>
+                </div>
+                <button class="stg-btn stg-btn_small d-none d-sm-block" data-modal>Напишите нам</button>
+                <button class="stg-btn stg-btn_small d-block d-sm-none" data-modal>Напишите</button>
+            </div>
+        </div>
+    </div>
+</header>
+        <main>
+            <section class="stg-section stg-section_margin">
+                <div class="container">
+                    <div class="about-us">
+    <div class="row mb-5 gy-4 gy-sm-0">
+        <div class="col-12 col-sm-6">
+            <picture><source srcset="img/about-us.webp" type="image/webp"><img class="about-us__img" alt="about-us-img" src="img/about-us.png"></picture>
+        </div>
+        <div class="col-12 col-sm-6 d-flex align-items-start justify-content-center flex-column">
+            <h1 class="about-us__title stg-h1">О нас</h1>
+            <p class="about-us__text">Мы — юридическая компания, которая помогает состоятельным людям получить второе гражданство и вид на жительство за инвестиции.</p>
+        </div>
+    </div>
+    <div class="row mb-4 gy-4 gy-sm-0">
+        <div class="col-12 col-sm-6"> 
+            <div class="about-us__list-item">
+                <h3 class="about-us__item-title stg-h3">С 2006 года на рынке</h3>
+                <p class="about-us__item-text">Знаем об отрасли все: например, как проходит проверка по каждой из программ, в каких случаях точно нужен аффидевит и что лучше решит вашу задачу.</p>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6">
+            <div class="about-us__list-item">
+                <h3 class="about-us__item-title stg-h3">С 2006 года на рынке</h3>
+                <p class="about-us__item-text">Знаем об отрасли все: например, как проходит проверка по каждой из программ, в каких случаях точно нужен аффидевит и что лучше решит вашу задачу.</p>
+            </div>
+        </div>
+    </div>
+    <div class="row mb-4 gy-4 gy-sm-0">
+        <div class="col-12 col-sm-6">
+            <div class="about-us__list-item">
+                <h3 class="about-us__item-title stg-h3">С 2006 года на рынке</h3>
+                <p class="about-us__item-text">Знаем об отрасли все: например, как проходит проверка по каждой из программ, в каких случаях точно нужен аффидевит и что лучше решит вашу задачу.</p>
+                <a class="about-us__item-link">Офисы и контакты</a>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6">
+            <div class="about-us__list-item">
+                <h3 class="about-us__item-title stg-h3">С 2006 года на рынке</h3>
+                <p class="about-us__item-text">Знаем об отрасли все: например, как проходит проверка по каждой из программ, в каких случаях точно нужен аффидевит и что лучше решит вашу задачу.</p>
+                <a class="about-us__item-link">Офисы и контакты</a>
+            </div>
+        </div>
+    </div>
+</div>
+                </div>
+            </section>
+            <section class="stg-section stg-section_margin">
+                <div class="personal-comment-one">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-xl-8">
+                <p class="personal-comment-one__text">Мы помогаем забыть про визовые ограничения и создать альтернативное место жительства без обязательного постоянного проживания.</p>
+                <p class="personal-comment-one__text"><span class="personal-comment-one__text_strong">Наши клиенты</span> - состоятельные люди и их семьи, бизнесмены, предприниматели, инвесторы, топ‑менеджеры, знаменитости. Также нашими услугами пользуются другие консалтинговые и юридические фирмы, представляя интересы своих клиентов.</p>
+                <div class="personal-comment-one__border"></div>
+                <p class="personal-comment-one__name d-none d-xl-inline-block">Елена Рудая,</p>
+                <p class="personal-comment-one__job-title d-none d-xl-inline-block">адвокат, директор по развитиюИммигрант Инвест</p>
+            </div>
+            <div class="col-12 col-xl-4">
+                <div class="personal-comment-one__img-container">
+                    <div class="personal-comment-one__person-info d-block d-xl-none">
+                        <p class="personal-comment-one__name">Елена Рудая,</p>
+                        <p class="personal-comment-one__job-title">адвокат, директор по развитию Иммигрант Инвест</p>
+                    </div>
+                    <div class="personal-comment-one__img-block">
+                        <picture><source srcset="img/elena-rudaay.webp" type="image/webp"><img src="img/elena-rudaay.png" alt="personal-img" class="personal-comment-one__img"></picture>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+            </section>
+            <section class="stg-section stg-section_margin">
+                <div class="container">
+    <div class="list-way-working">
+        <h2 class="stg-h2">Как мы работаем</h2>
+        <div class="row">
+            <div class="col">
+                <div class="list-way-working__item">
+                    <span class="list-way-working__number">1</span>
+                    <h3 class="list-way-working__title stg-h3">Определяем цели</h3>
+                    <span class="list-way-working__text">Юристы уточняют ваши цели, чтобы подобрать оптимальный вариант. Например для жизни в любом из государств Евросоюза и Шенгена подойдет только гражданство Мальты, а для поездок в Евросоюз — ВНЖ в Португалии, ВНЖ в Греции, ВНЖ или ПМЖ на Мальте и не только.</span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="list-way-working__item">
+                    <span class="list-way-working__number">1</span>
+                    <h3 class="list-way-working__title stg-h3">Определяем цели</h3>
+                    <span class="list-way-working__text">Юристы уточняют ваши цели, чтобы подобрать оптимальный вариант. Например для жизни в любом из государств Евросоюза и Шенгена подойдет только гражданство Мальты, а для поездок в Евросоюз — ВНЖ в Португалии, ВНЖ в Греции, ВНЖ или ПМЖ на Мальте и не только.</span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="list-way-working__item">
+                    <span class="list-way-working__number">1</span>
+                    <h3 class="list-way-working__title stg-h3">Определяем цели</h3>
+                    <span class="list-way-working__text">Юристы уточняют ваши цели, чтобы подобрать оптимальный вариант. Например для жизни в любом из государств Евросоюза и Шенгена подойдет только гражданство Мальты, а для поездок в Евросоюз — ВНЖ в Португалии, ВНЖ в Греции, ВНЖ или ПМЖ на Мальте и не только.</span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="list-way-working__item">
+                    <span class="list-way-working__number">1</span>
+                    <h3 class="list-way-working__title stg-h3">Определяем цели</h3>
+                    <span class="list-way-working__text">Юристы уточняют ваши цели, чтобы подобрать оптимальный вариант. Например для жизни в любом из государств Евросоюза и Шенгена подойдет только гражданство Мальты, а для поездок в Евросоюз — ВНЖ в Португалии, ВНЖ в Греции, ВНЖ или ПМЖ на Мальте и не только.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+            </section>
+            <section class="stg-section stg-section_margin">
+                <div class="container">
+                    <div class="big-list-advantages">
+    <h2 class="stg-h2 big-list-advantages__title">За что нас выбирают</h2>
+    <div class="row mb-5 gy-5 gy-md-0">
+        <div class="col-12 col-md-4">
+            <div class="big-list-advantages__item">
+                <h3 class="stg-h3 big-list-advantages__item-title">Снижаем риск отказа до 1%</h3>
+                <p class="big-list-advantages__text">Наш внутренний compliance-отдел? проводит глубокую предварительную проверку каждого заявителя до подписания договора с нами и до сбора документов для участия в программе.</p>
+            </div>
+        </div>
+        <div class="col-12 col-md-4">
+            <div class="big-list-advantages__item">
+                <h3 class="stg-h3 big-list-advantages__item-title">Снижаем риск отказа до 1%</h3>
+                <p class="big-list-advantages__text">Наш внутренний compliance-отдел? проводит глубокую предварительную проверку каждого заявителя до подписания договора с нами и до сбора документов для участия в программе.</p>
+            </div>
+        </div>
+        <div class="col-12 col-md-4">
+            <div class="big-list-advantages__item">
+                <h3 class="stg-h3 big-list-advantages__item-title">Снижаем риск отказа до 1%</h3>
+                <p class="big-list-advantages__text">Наш внутренний compliance-отдел? проводит глубокую предварительную проверку каждого заявителя до подписания договора с нами и до сбора документов для участия в программе.</p>
+            </div>
+        </div>
+    </div>
+    <div class="row flex-wrap flex-md-nowrap gy-5 gy-md-0">
+        <div class="col-12 col-md-4">
+            <div class="big-list-advantages__item">
+                <h3 class="stg-h3 big-list-advantages__item-title">Снижаем риск отказа до 1%</h3>
+                <p class="big-list-advantages__text">Наш внутренний compliance-отдел? проводит глубокую предварительную проверку каждого заявителя до подписания договора с нами и до сбора документов для участия в программе.</p>
+            </div>
+        </div>
+        <div class="col-12 col-md-8">
+            <div class="big-list-advantages__swiper swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <picture><source srcset="img/diploma-one.webp" type="image/webp"><img alt="diploma" src="img/diploma-one.jpg" class="big-list-advantages__swiper-img"></picture>
+                  </div>
+                  <div class="swiper-slide">
+                    <picture><source srcset="img/diploma-one.webp" type="image/webp"><img alt="diploma" src="img/diploma-one.jpg" class="big-list-advantages__swiper-img"></picture>
+                  </div>
+                  <div class="swiper-slide">
+                    <picture><source srcset="img/diploma-one.webp" type="image/webp"><img alt="diploma" src="img/diploma-one.jpg" class="big-list-advantages__swiper-img"></picture>
+                  </div>
+                  <div class="swiper-slide">
+                    <picture><source srcset="img/diploma-one.webp" type="image/webp"><img alt="diploma" src="img/diploma-one.jpg" class="big-list-advantages__swiper-img"></picture>
+                  </div>
+                  <div class="swiper-slide">
+                    <picture><source srcset="img/diploma-one.webp" type="image/webp"><img alt="diploma" src="img/diploma-one.jpg" class="big-list-advantages__swiper-img"></picture>
+                  </div>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+    </div>
+</div>
+                </div>
+            </section>
+            <section class="stg-section stg-section_margin">
+                <div class="personal-comment-two">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-8">
+                <p class="personal-comment-two__text">Проверка благонадежности — ключевой этап каждой инвестиционной программы. Иммигрант Инвест, единственная компания в отрасли, которая имеет собственное Compliance-подразделение и проводит предварительную проверку благонадежности. Наша деятельность как агента инвестиционных программ полностью соответствует требованиям 6 Директивы Евросоюза о противодействии легализации доходов, полученных преступным путем. Мы можем провести глубокую проверку клиента еще до подачи им документов на рассмотрение. Это позволяет снизить риск отказа до 1%.</p>
+                <div class="personal-comment-two__border"></div>
+                <p class="personal-comment-two__name d-none d-lg-inline-block">Елена Рудая,</p>
+                <p class="personal-comment-two__job-title d-none d-lg-inline-block">адвокат, директор по развитиюИммигрант Инвест</p>
+            </div>
+            <div class="col-12 col-sm-8 col-md-6 col-lg-4">
+                <div class="personal-comment-two__img-container">
+                    <div class="personal-comment-two__person-info d-flex d-lg-none">
+                        <p class="personal-comment-two__name">Елена Рудая,</p>
+                        <p class="personal-comment-two__job-title">адвокат, директор по развитиюИммигрант Инвест</p>
+                    </div>
+                    <picture><source srcset="img/vladlena.webp" type="image/webp"><img src="img/vladlena.jpg" alt="personal-img" class="personal-comment-two__img"></picture>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+            </section>
+            <section class="stg-section stg-section_margin">
+                <div class="container">
+                    <div class="list-team">
+    <h2 class="list-team__title stg-h2">Команда</h2>
+    <p class="list-team__text">Вся наша команда состоит из 40 человек, которых объединяет одна цель — найти наилучшее возможное решение для клиента, исходя из их его ситуации и задач. Наши юристы — члены IMC. Это всемирная ассоциация по вопросам иммиграции и гражданства за инвестиции. Также у нас работают сертифицированные AML-officers.</p>
+    <div class="row mb-4 gy-5 gy-md-0">
+        <div class="col-12 col-sm-6 col-md-3">
+            <div class="list-team__item">
+                <picture><source srcset="img/team-1.webp" type="image/webp"><img alt="team" class="list-team__person-img" src="img/team-1.jpg"></picture>
+                <div class="list-team__text-block">
+                    <p class="list-team__person-name">Елена Рудая</p>
+                    <p class="list-team__person-job-title">Адвокат, директор по развитию, почетный консул Вануату</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3">
+            <div class="list-team__item">
+                <picture><source srcset="img/team-1.webp" type="image/webp"><img alt="team" class="list-team__person-img" src="img/team-1.jpg"></picture>
+                <div class="list-team__text-block">
+                    <p class="list-team__person-name">Елена Рудая</p>
+                    <p class="list-team__person-job-title">Адвокат, директор по развитию, почетный консул Вануату</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3 d-none d-sm-block">
+            <div class="list-team__item">
+                <picture><source srcset="img/team-1.webp" type="image/webp"><img alt="team" class="list-team__person-img" src="img/team-1.jpg"></picture>
+                <p class="list-team__person-name">Елена Рудая</p>
+                <p class="list-team__person-job-title">Адвокат, директор по развитию, почетный консул Вануату</p>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3 d-none d-sm-block">
+            <div class="list-team__item">
+                <picture><source srcset="img/team-1.webp" type="image/webp"><img alt="team" class="list-team__person-img" src="img/team-1.jpg"></picture>
+                <p class="list-team__person-name">Елена Рудая</p>
+                <p class="list-team__person-job-title">Адвокат, директор по развитию, почетный консул Вануату</p>
+            </div>
+        </div>
+    </div>
+    <div class="row gy-5 gy-md-0">
+        <div class="col-12 col-sm-6 col-md-3 d-none d-sm-block">
+            <div class="list-team__item">
+                <picture><source srcset="img/team-1.webp" type="image/webp"><img alt="team" class="list-team__person-img" src="img/team-1.jpg"></picture>
+                <p class="list-team__person-name">Елена Рудая</p>
+                <p class="list-team__person-job-title">Адвокат, директор по развитию, почетный консул Вануату</p>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3 d-none d-sm-block">
+            <div class="list-team__item">
+                <picture><source srcset="img/team-1.webp" type="image/webp"><img alt="team" class="list-team__person-img" src="img/team-1.jpg"></picture>
+                <p class="list-team__person-name">Елена Рудая</p>
+                <p class="list-team__person-job-title">Адвокат, директор по развитию, почетный консул Вануату</p>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3 d-none d-sm-block">
+            <div class="list-team__item">
+                <picture><source srcset="img/team-1.webp" type="image/webp"><img alt="team" class="list-team__person-img" src="img/team-1.jpg"></picture>
+                <p class="list-team__person-name">Елена Рудая</p>
+                <p class="list-team__person-job-title">Адвокат, директор по развитию, почетный консул Вануату</p>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3 d-none d-sm-block">
+            <div class="list-team__btn-container">
+                <button class="stg-btn stg-btn_middle list-team__btn">Вся команда</button>
+            </div>
+        </div>
+    </div>
+</div>
+                </div>
+            </section>
+            <section class="stg-section stg-section_margin">
+                <div class="container">
+                    <div class="carousel-reviews">
+    <h2 class="stg-h2 carousel-reviews__title">Отзывы</h2>
+    <p class="carousel-reviews__text">Они уже получили гражданство или вид на жительство с Иммигрант Инвест.</p>
+    <div class="carousel-reviews__swiper swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="carousel-reviews__item">
+                <div class="carousel-reviews__item-header">
+                    <div class="carousel-reviews__person-info">
+                        <p class="carousel-reviews__name">Антон</p>
+                        <p class="carousel-reviews__subtitle">получил ПМЖ на Мальте</p>
+                    </div>
+                    <picture><source srcset="img/reviewer-one.webp" type="image/webp"><img class="carousel-reviews__img" alt="person-foto" src="img/reviewer-one.png"></picture>
+                </div>
+                <p class="carousel-reviews__text-massage">Мы прошли проверку и получили аккредитацию правительств стран Евросоюза и Карибского бассейна. В подтверждение этому — наши лицензии. Гражданство и вид на жительство за инвестиции можно получить только через лицензированного агента. Это требование законов в иностранных юрисдикциях.</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="carousel-reviews__item">
+                <div class="carousel-reviews__item-header">
+                    <div class="carousel-reviews__person-info">
+                        <p class="carousel-reviews__name">Антон</p>
+                        <p class="carousel-reviews__subtitle">получил ПМЖ на Мальте</p>
+                    </div>
+                    <picture><source srcset="img/reviewer-one.webp" type="image/webp"><img class="carousel-reviews__img" alt="person-foto" src="img/reviewer-one.png"></picture>
+                </div>
+                <p class="carousel-reviews__text-massage">Мы прошли проверку и получили аккредитацию правительств стран Евросоюза и Карибского бассейна. В подтверждение этому — наши лицензии. Гражданство и вид на жительство за инвестиции можно получить только через лицензированного агента. Это требование законов в иностранных юрисдикциях.</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="carousel-reviews__item">
+                <div class="carousel-reviews__item-header">
+                    <div class="carousel-reviews__person-info">
+                        <p class="carousel-reviews__name">Антон</p>
+                        <p class="carousel-reviews__subtitle">получил ПМЖ на Мальте</p>
+                    </div>
+                    <picture><source srcset="img/reviewer-one.webp" type="image/webp"><img class="carousel-reviews__img" alt="person-foto" src="img/reviewer-one.png"></picture>
+                </div>
+                <p class="carousel-reviews__text-massage">Мы прошли проверку и получили аккредитацию правительств стран Евросоюза и Карибского бассейна. В подтверждение этому — наши лицензии. Гражданство и вид на жительство за инвестиции можно получить только через лицензированного агента. Это требование законов в иностранных юрисдикциях.</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="carousel-reviews__item">
+                <div class="carousel-reviews__item-header">
+                    <div class="carousel-reviews__person-info">
+                        <p class="carousel-reviews__name">Антон</p>
+                        <p class="carousel-reviews__subtitle">получил ПМЖ на Мальте</p>
+                    </div>
+                    <picture><source srcset="img/reviewer-one.webp" type="image/webp"><img class="carousel-reviews__img" alt="person-foto" src="img/reviewer-one.png"></picture>
+                </div>
+                <p class="carousel-reviews__text-massage">Мы прошли проверку и получили аккредитацию правительств стран Евросоюза и Карибского бассейна. В подтверждение этому — наши лицензии. Гражданство и вид на жительство за инвестиции можно получить только через лицензированного агента. Это требование законов в иностранных юрисдикциях.</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="carousel-reviews__item">
+                <div class="carousel-reviews__item-header">
+                    <div class="carousel-reviews__person-info">
+                        <p class="carousel-reviews__name">Антон</p>
+                        <p class="carousel-reviews__subtitle">получил ПМЖ на Мальте</p>
+                    </div>
+                    <picture><source srcset="img/reviewer-one.webp" type="image/webp"><img class="carousel-reviews__img" alt="person-foto" src="img/reviewer-one.png"></picture>
+                </div>
+                <p class="carousel-reviews__text-massage">Мы прошли проверку и получили аккредитацию правительств стран Евросоюза и Карибского бассейна. В подтверждение этому — наши лицензии. Гражданство и вид на жительство за инвестиции можно получить только через лицензированного агента. Это требование законов в иностранных юрисдикциях.</p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+</div>
+                </div>
+            </section>
+            <section class="stg-section stg-section_margin">
+                <div class="container">
+                    <div class="connection-form">
+    <div class="row flex-wrap">
+        <div class="col-12 col-lg-5 col-xl-6 d-lg-block d-flex justify-content-center flex-column">
+            <p class="connection-form__subtitle">Индивидуальная встреча</p>
+            <h2 class="connection-form__title">Помогу с выбором</h2>
+            <p class="connection-form__text">Предложу оптимальное решение, исходя из ваших задач, бюджета и сроков</p>
+            <button class="stg-btn stg-btn_middle connection-form__btn" data-modal>Получить консультацию</button>
+            <div class="connection-form__contacts-list d-flex justify-content-end d-sm-inline-block">
+                <ul class="connection-form__contacts-list">
+                    <li class="connection-form__contact-item">
+                        <img alt="phone-icon" class="connection-form__contact-icon" src="img/phone.svg">
+                        <a href="tel:+436505404979" class="connection-form__link">+43 (650) 540-49-79</a>
+                    </li>
+                    <li class="connection-form__contact-item">
+                        <img alt="phone-icon" class="connection-form__contact-icon" src="img/whatsapp.svg">
+                        <a href="#" class="connection-form__link">WhatsApp</a>
+                    </li>
+                    <li class="connection-form__contact-item">
+                        <img alt="phone-icon" class="connection-form__contact-icon" src="img//telegram.svg">
+                        <a href="#" class="connection-form__link">Telegram</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-4 col-lg-4 connection-form__img-block">
+            <picture><source srcset="img/connection-women.webp" type="image/webp"><img class="connection-form__img" src="img/connection-women.png" alt="connection-form-person"></picture>
+        </div>
+        <div class="col-8 col-lg-3 col-xl-2">
+            <p class="connection-form__person-title stg-h4">Злата Эрлах,</p>
+            <p class="connection-form__person-text">директор венского офиса,эксперт инвестпрограмм</p>
+        </div>
+    </div>
+</div>
+                </div>
+            </section>
+            <section class="stg-section stg-section_margin">
+                <div class="container">
+                    <div class="carousel-work-examples">
+    <h2 class="stg-h2 carousel-work-examples__title">Примеры из практики</h2>
+    <p class="carousel-work-examples__text">За годы практики мы помогли нескольким сотням семей решить их задачи: дать лучшее будущее детям, подготовить «запасной аэродром» и просто посещать любимые уголки планеты без виз и ограничений. Возможно, ваша история — следующая.</p>
+    <div class="carousel-work-examples__swiper swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="carousel-work-examples__item">
+                <picture><source srcset="img/practice-1.webp" type="image/webp"><img class="carousel-work-examples__img" alt="person" src="img/practice-1.jpg"></picture>
+                <p class="carousel-work-examples__item-text">Переезд в италию по визе для финансово независимых: как прорубить окно в Европу...</p>
+                <a class="carousel-work-examples__link">История клиента</a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="carousel-work-examples__item">
+                <picture><source srcset="img/practice-1.webp" type="image/webp"><img class="carousel-work-examples__img" alt="person" src="img/practice-1.jpg"></picture>
+                <p class="carousel-work-examples__item-text">Переезд в италию по визе для финансово независимых: как прорубить окно в Европу...</p>
+                <a class="carousel-work-examples__link">История клиента</a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="carousel-work-examples__item">
+                <picture><source srcset="img/practice-1.webp" type="image/webp"><img class="carousel-work-examples__img" alt="person" src="img/practice-1.jpg"></picture>
+                <p class="carousel-work-examples__item-text">Переезд в италию по визе для финансово независимых: как прорубить окно в Европу...</p>
+                <a class="carousel-work-examples__link">История клиента</a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="carousel-work-examples__item">
+                <picture><source srcset="img/practice-1.webp" type="image/webp"><img class="carousel-work-examples__img" alt="person" src="img/practice-1.jpg"></picture>
+                <p class="carousel-work-examples__item-text">Переезд в италию по визе для финансово независимых: как прорубить окно в Европу...</p>
+                <a class="carousel-work-examples__link">История клиента</a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="carousel-work-examples__item">
+                <picture><source srcset="img/practice-1.webp" type="image/webp"><img class="carousel-work-examples__img" alt="person" src="img/practice-1.jpg"></picture>
+                <p class="carousel-work-examples__item-text">Переезд в италию по визе для финансово независимых: как прорубить окно в Европу...</p>
+                <a class="carousel-work-examples__link">История клиента</a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+</div>
+
+                </div>
+            </section>
+            <section class="stg-section stg-section_margin">
+                <div class="container">
+                    <div class="list-partners">
+    <div class="row mb-4 gy-4 gy-md-0">
+        <div class="col-6 col-md-3">
+            <picture><source srcset="img/partner-1.webp" type="image/webp"><img alt="logo-partner" class="list-partners__logo" src="img/partner-1.jpg"></picture>
+        </div>
+        <div class="col-6 col-md-3">
+            <picture><source srcset="img/partner-1.webp" type="image/webp"><img alt="logo-partner" class="list-partners__logo" src="img/partner-1.jpg"></picture>
+        </div>
+        <div class="col-6 col-md-3">
+            <picture><source srcset="img/partner-1.webp" type="image/webp"><img alt="logo-partner" class="list-partners__logo" src="img/partner-1.jpg"></picture>
+        </div>
+        <div class="col-6 col-md-3">
+            <picture><source srcset="img/partner-1.webp" type="image/webp"><img alt="logo-partner" class="list-partners__logo" src="img/partner-1.jpg"></picture>
+        </div>
+    </div>
+    <div class="row gy-4 gy-md-0 d-none d-sm-flex">
+        <div class="col-6 col-md-3">
+            <picture><source srcset="img/partner-1.webp" type="image/webp"><img alt="logo-partner" class="list-partners__logo" src="img/partner-1.jpg"></picture>
+        </div>
+        <div class="col-6 col-md-3">
+            <picture><source srcset="img/partner-1.webp" type="image/webp"><img alt="logo-partner" class="list-partners__logo" src="img/partner-1.jpg"></picture>
+        </div>
+        <div class="col-6 col-md-3">
+            <picture><source srcset="img/partner-1.webp" type="image/webp"><img alt="logo-partner" class="list-partners__logo" src="img/partner-1.jpg"></picture>
+        </div>
+        <div class="col-6 col-md-3">
+            <picture><source srcset="img/partner-1.webp" type="image/webp"><img alt="logo-partner" class="list-partners__logo" src="img/partner-1.jpg"></picture>
+        </div>
+    </div>
+</div>
+                </div>
+            </section>
+            <section class="stg-section stg-section_margin">
+                <div class="container">
+                    <div class="carousel-work-examples">
+    <h2 class="stg-h2 carousel-work-examples__title">Примеры из практики</h2>
+    <p class="carousel-work-examples__text">За годы практики мы помогли нескольким сотням семей решить их задачи: дать лучшее будущее детям, подготовить «запасной аэродром» и просто посещать любимые уголки планеты без виз и ограничений. Возможно, ваша история — следующая.</p>
+    <div class="carousel-work-examples__swiper swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="carousel-work-examples__item">
+                <picture><source srcset="img/practice-1.webp" type="image/webp"><img class="carousel-work-examples__img" alt="person" src="img/practice-1.jpg"></picture>
+                <p class="carousel-work-examples__item-text">Переезд в италию по визе для финансово независимых: как прорубить окно в Европу...</p>
+                <a class="carousel-work-examples__link">История клиента</a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="carousel-work-examples__item">
+                <picture><source srcset="img/practice-1.webp" type="image/webp"><img class="carousel-work-examples__img" alt="person" src="img/practice-1.jpg"></picture>
+                <p class="carousel-work-examples__item-text">Переезд в италию по визе для финансово независимых: как прорубить окно в Европу...</p>
+                <a class="carousel-work-examples__link">История клиента</a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="carousel-work-examples__item">
+                <picture><source srcset="img/practice-1.webp" type="image/webp"><img class="carousel-work-examples__img" alt="person" src="img/practice-1.jpg"></picture>
+                <p class="carousel-work-examples__item-text">Переезд в италию по визе для финансово независимых: как прорубить окно в Европу...</p>
+                <a class="carousel-work-examples__link">История клиента</a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="carousel-work-examples__item">
+                <picture><source srcset="img/practice-1.webp" type="image/webp"><img class="carousel-work-examples__img" alt="person" src="img/practice-1.jpg"></picture>
+                <p class="carousel-work-examples__item-text">Переезд в италию по визе для финансово независимых: как прорубить окно в Европу...</p>
+                <a class="carousel-work-examples__link">История клиента</a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="carousel-work-examples__item">
+                <picture><source srcset="img/practice-1.webp" type="image/webp"><img class="carousel-work-examples__img" alt="person" src="img/practice-1.jpg"></picture>
+                <p class="carousel-work-examples__item-text">Переезд в италию по визе для финансово независимых: как прорубить окно в Европу...</p>
+                <a class="carousel-work-examples__link">История клиента</a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+</div>
+
+                </div>
+            </section>
+            <section class="stg-section stg-section_margin">
+                <div class="big-connection-form">
+    <div class="container">
+        <h2 class="stg-h2 big-connection-form__title">Станьте нашим партнером сегодня</h2>
+        <form>
+            <div class="row">
+                <div class="col-12 col-md-7">
+                    <textarea class="big-connection-form__textarea" placeholder="Текст вопроса"></textarea>
+                    <div class="big-connection-form__input-container">
+                        <input class="big-connection-form__input-name big-connection-form__input" type="text" placeholder="Имя">
+                        <input class="big-connection-form__input-main big-connection-form__input" type="text" placeholder="Электронная почта">
+                    </div>
+                    <div class="big-connection-form__input-container">
+                        <input class="big-connection-form__input-phone big-connection-form__input" type="text" placeholder="Контактный телефон">
+                        <input class="big-connection-form__input-company big-connection-form__input" type="text" placeholder="Название компании">
+                    </div>
+                    <button class="stg-btn stg-btn_big big-connection-form__btn">Отправить заявку</button>
+                </div>
+                <div class="col-12 col-md-5">
+                    <p class="big-connection-form__text">После отправки запроса мы перезвоним вам, чтобы согласовать условия сотрудничества. Затем ответим на вопросы о программах и, если вы уже готовы передать первого клиента, подберем возможные решения его или её задач с деталями и расчетами.</p>
+                    <div class="big-connection-form__personal-container">
+                        <picture><source srcset="img/connection-form.webp" type="image/webp"><img class="big-connection-form__img" alt="person" src="img/connection-form.png"></picture>
+                        <div class="big-connection-form__person-text">
+                            <p class="big-connection-form__name">Юлия Веремьёва,</p>
+                            <p class="big-connection-form__job-title">директор по развитиюпартнерской сети</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+            </section>
+        </main>
+        <footer class="stg-section stg-section_independent-margin stg-shadow">
+            <div class="container">
+                <footer class="footer">
+    <div class="row flex-wrap">
+        <div class="col-md-4 d-flex flex-column justify-content-between order-2 order-md-0 col-12 text-center">
+            <a href="#" class="logo-link"><img src="img/logo.svg" class="logo"></a>
+            <div class="footer__partner">
+                <picture><source srcset="img/partner-logo.webp" type="image/webp"><img class="footer__partner-img" alt="partner-logo" src="img/partner-logo.png"></picture>
+                <span class="footer__partner-text">Иммигрант Инвест — официальный партнер IMC</span>
+            </div>
+        </div>
+        <div class="col-6 col-md-4 order-0 order-md-1">
+            <h4 class="stg-h4 footer__menu-title">Гражданство</h4>
+            <ul class="footer__menu-list">
+                <li class="footer__menu-item"><a class="footer__menu-link">Мальта</a></li>
+                <li class="footer__menu-item"><a class="footer__menu-link">Турция</a></li>
+                <li class="footer__menu-item"><a class="footer__menu-link">Египет</a></li>
+                <li class="footer__menu-item"><a class="footer__menu-link">Парагвай</a></li>
+                <li class="footer__menu-item"><a class="footer__menu-link">Сент-Китс и Невис</a></li>
+                <li class="footer__menu-item"><a class="footer__menu-link">Антигуа и Барбуда</a></li>
+                <li class="footer__menu-item"><a class="footer__menu-link">Сент-Люсия</a></li>
+                <li class="footer__menu-item"><a class="footer__menu-link">Доминикачу</a></li>
+                <li class="footer__menu-item"><a class="footer__menu-link">Гренада</a></li>
+                <li class="footer__menu-item"><a class="footer__menu-link">Вануату</a></li>
+                <li class="footer__menu-item"><a class="footer__menu-link">Все программы</a></li>
+                <li class="footer__menu-item"><a class="footer__menu-link">Недвижимость</a></li>
+                <li class="footer__menu-item"><a class="footer__menu-link">Выбор объекта</a></li>
+                <li class="footer__menu-item"><a class="footer__menu-link">Гайд по странам</a></li>
+                <li class="footer__menu-item"><a class="footer__menu-link">Вид на жительство</a></li>
+                <li class="footer__menu-item"><a class="footer__menu-link">Португалия</a></li>
+            </ul>
+        </div>
+        <div class="col-6 col-md-4 order-1 order-md-2">
+            <h4 class="stg-h4 footer__menu-title">Вид на жительство</h4>
+            <ul class="footer__menu-list">
+                <li class="footer__menu-item"><a class="footer__menu-link">Мальта, ПМЖ</a></li>
+                <li class="footer__menu-item"><a class="footer__menu-link">Греция</a></li>
+                <li class="footer__menu-item"><a class="footer__menu-link">Кипр</a></li>
+                <li class="footer__menu-item"><a class="footer__menu-link">Италия</a></li>
+                <li class="footer__menu-item"><a class="footer__menu-link">Мальта, ВНЖ</a></li>
+                <li class="footer__menu-item"><a class="footer__menu-link">Андорра</a></li>
+                <li class="footer__menu-item"><a class="footer__menu-link">Австрия</a></li>
+                <li class="footer__menu-item"><a class="footer__menu-link">Португалия, виза D7 </a></li>
+                <li class="footer__menu-item"><a class="footer__menu-link">Португалия, Digital</a></li>
+                <li class="footer__menu-item"><a class="footer__menu-link">Nomad</a></li>
+                <li class="footer__menu-item"><a class="footer__menu-link">Испания</a></li>
+                <li class="footer__menu-item"><a class="footer__menu-link">ОАЭ</a></li>
+                <li class="footer__menu-item"><a class="footer__menu-link">США</a></li>
+                <li class="footer__menu-item"><a class="footer__menu-link">Все программы</a></li>
+                <li class="footer__menu-item"><a class="footer__menu-link">Ресурсы</a></li>
+                <li class="footer__menu-item"><a class="footer__menu-link">Блог</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer__partner-secondary d-flex d-md-none">
+        <picture><source srcset="img/partner-logo.webp" type="image/webp"><img class="footer__partner-secondary-img" alt="partner-logo" src="img/partner-logo.png"></picture>
+        <span class="footer__partner-secondary-text">Иммигрант Инвест — официальный партнер IMC</span>
+    </div>
+</footer>
+            </div>
+        </footer>
+        <div class="modal">
+    <div class="modal__dialog">
+        <div class="modal__content">
+            <form action="#">
+                <div class="modal__close" data-close>&times;</div>
+                <input required placeholder="Ваше имя" name="name" type="text" class="modal__input">
+                <input required placeholder="Ваша фамилия" name="surname" type="text" class="modal__input">
+                <input required placeholder="Ваш номер телефона" name="phone" type="phone" class="modal__input">
+                <input required placeholder="Ваше E-mail" name="email" type="email" class="modal__input">
+                <input required placeholder="Ваедите промокод" name="promo" type="text" class="modal__input">
+                <button class="stg-btn stg-btn_big modal__btn">Оставить Заявку</button>
+            </form>
+        </div>
+    </div>
+</div>
+        <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js?_v=20231121162048" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js?_v=20231121162048"></script>
+        <script src="js/app.min.js?_v=20231121162048"></script>
+    </body>
+</html>
